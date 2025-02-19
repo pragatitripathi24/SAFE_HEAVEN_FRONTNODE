@@ -13,7 +13,7 @@ i18n
     debug: true, // Set false in production
 
     backend: {
-      loadPath: process.env.PUBLIC_URL + '/Language/{{lng}}/translation.json',
+      loadPath: process.env.PUBLIC_URL + '/Language/{{lng}}/Translation.json',
     },
 
     interpolation: {
