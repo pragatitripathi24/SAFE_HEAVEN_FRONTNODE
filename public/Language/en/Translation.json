@@ -1,0 +1,351 @@
+{
+    "NAV1": {
+      "GOVT_OF_INDIA": "Government of India",
+      "BAL_KALYAN": "Child Welfare Committee",
+      "SKIP_TO_MAIN": "Skip to main content",
+      "SIGN_IN": "Sign In",
+      "LANGUAGE_ENGLISH": "ENGLISH",
+      "LANGUAGE_HINDI": "HINDI"
+    },
+  
+    "NAV2": {
+      "HOME": "Home",
+      "ABOUT": "About",
+      "SERVICES": "Services",
+      "SCHEMES": "Schemes",
+      "NGOS": "NGO's",
+      "LOST_CHILDREN": "Lost Children",
+      "DASHBOARD": "Dashboard",
+      "ADOPTION": "Adoption",
+      "MEDIA": "Media",
+      "CONTACT": "Contact"
+    },
+  
+    "MARQUEE_TEXT": "A child is a person who is going to carry on what you have started... He will assume control of your cities, states, and nations. He is going to move in and take over your churches, schools, universities, and corporations... the fate of humanity is in his hand.",
+  
+    
+    
+        "featured": {
+            "title": "Child Welfare Committee",
+    "subtitle": "Our Initiatives and Support",
+          "name1": "Child Safety Programs",
+          "total1": "122 Programs",
+          "name2": "Community Awareness Campaigns",
+          "total2": "75 Campaigns",
+          "name3": "Counseling Services",
+          "total3": "200 Families",
+          "name4": "Rehabilitation Services",
+          "total4": "120 Children",
+          "name5": "Emergency Response Teams",
+          "total5": "30 Teams"
+        }
+        ,
+            "awards": {
+              "name1": "Blue Burmin Award",
+              "name2": "Mimo X11 Award",
+              "name3": "Australian UGC Award",
+              "name4": "IITCA Green Award"
+            }
+          
+      ,
+            "hero": {
+                "title1": "Caring Today for a Brighter Tomorrow",
+                "subtitle1": "Together, we ensure every child has the opportunity to thrive and succeed in a nurturing environment.",
+                "title2": "Building Hope, One Child at a Time",
+                "subtitle2": "Dedicated to transforming lives and fostering resilience in children through support and advocacy.",
+                "title3": "Every Child, Every Chance",
+                "subtitle3": "We believe in providing equal opportunities for every child to grow, learn, and flourish."
+              }
+      ,
+
+  "recent": {
+     "titlemain": "Success Stories",
+    "subtitlemain": "Discover how we have made a difference in the lives of children and families.",
+    "category": "Success Story",
+    "readMore": "Read More",
+    "title": {
+      "Finding Hope: A Family Reunited": "Finding Hope: A Family Reunited",
+      "Safe Haven: A New Beginning": "Safe Haven: A New Beginning",
+      "A Boy's Journey Back Home": "A Boy's Journey Back Home",
+      "Restoring Smiles: A Family Reunited": "Restoring Smiles: A Family Reunited",
+      "Safe Passage: Helping Children Find Their Way": "Safe Passage: Helping Children Find Their Way",
+      "Hope Restored: A Child's Return": "Hope Restored: A Child's Return",
+      "New Beginnings: A Fresh Start": "New Beginnings: A Fresh Start"
+    },
+    "location": {
+      "New York, USA": "New York, USA",
+      "London, UK": "London, UK",
+      "Toronto, Canada": "Toronto, Canada",
+      "Mumbai, India": "Mumbai, India",
+      "Sydney, Australia": "Sydney, Australia",
+      "Berlin, Germany": "Berlin, Germany",
+      "Rio de Janeiro, Brazil": "Rio de Janeiro, Brazil"
+    },
+    "description": {
+      "After months of searching, we helped reunite a family with their missing child.": "After months of searching, we helped reunite a family with their missing child.",
+      "A young girl found a loving home after being reported missing for weeks.": "A young girl found a loving home after being reported missing for weeks.",
+      "Thanks to our community outreach, a lost boy was safely returned to his family.": "Thanks to our community outreach, a lost boy was safely returned to his family.",
+      "A heartfelt reunion of a family after a long and arduous search.": "A heartfelt reunion of a family after a long and arduous search.",
+      "We assisted a group of children in finding their way back to safety during a crisis.": "We assisted a group of children in finding their way back to safety during a crisis.",
+      "After a detailed investigation, we successfully brought a child back to their family.": "After a detailed investigation, we successfully brought a child back to their family.",
+      "A child, once lost, is now thriving in a caring and supportive environment.": "A child, once lost, is now thriving in a caring and supportive environment."
+    }
+  }
+
+  ,
+    "donation": {
+      "heading": "DONATE FOR CHILD WELFARE",
+      "description": "Your generous donation will help us provide essential healthcare services, support programs, and resources for women and children in need.",
+      "button": "Make a Donation"
+    }
+  
+  ,
+
+  
+    "awards": {
+      "title": "Real-Time Child Welfare Statistics",
+      "subtitle": "Tracking our efforts to reunite children",
+      "statistics": {
+        "1": {
+          "name": "Active Cases"
+        },
+        "2": {
+          "name": "Children Found & Reunited"
+        },
+        "3": {
+          "name": "Monthly/Weekly Case Progress"
+        },
+        "4": {
+          "name": "New Cases This Month/Week"
+        }
+      }
+    }
+    ,
+ 
+  "location": {
+    "title": "Explore CWC Locations in India",
+    "subtitle": "Find the nearest Child Welfare Committees and Child Care Homes in major cities across India.",
+    "delhi": "Delhi, India",
+    "mumbai": "Mumbai, Maharashtra",
+    "kolkata": "Kolkata, West Bengal",
+    "bangalore": "Bangalore, Karnataka",
+    "chennai": "Chennai, Tamil Nadu",
+    "hyderabad": "Hyderabad, Telangana",
+    "ahmedabad": "Ahmedabad, Gujarat",
+    "lucknow": "Lucknow, Uttar Pradesh",
+    "jaipur": "Jaipur, Rajasthan",
+    "villas": "{{count}} Child Care Homes",
+    "offices": "{{count}} CWC Offices",
+    "apartments": "{{count}} Child Welfare Centers"
+  }
+,
+  "footer": {
+    "contactTitle": "Need Assistance or Have Questions?",
+    "contactSubtitle": "We're here to help. Reach out to ensure the safety and welfare of every child.",
+    "contactButton": "Contact Us Today",
+    "subscriptionDescription": "Stay informed with the latest updates, resources, and initiatives to protect children, sent straight to your inbox.",
+    "enterEmail": "Enter your email",
+    "subscribeButton": "Subscribe",
+    "quickLinksTitle": "Quick Links",
+    "aboutUs": "About Us",
+    "ourServices": "Our Services",
+    "contactUs": "Contact Us",
+    "support": "Support",
+    "followUs": "Follow Us",
+    "legalText": "© 2024 CWC Initiative. Designed by Pragati."
+  },
+  "about": {
+    "aboutUs": "About Us",
+    "aboutUsTitle": "About Us - Protecting Every Child",
+    "missionTitle": "Our Mission and Story",
+    "missionSubtitle": "Learn how we work to ensure the safety and well-being of children everywhere.",
+    "missionDescription1": "The Child Welfare Committee (CWC) is dedicated to safeguarding the rights of children and ensuring their safety across communities. Our platform bridges the gap between lost children and their families by providing a streamlined case management process that prioritizes quick action and protection.",
+    "missionDescription2": "From providing support services to organizing awareness campaigns, our agency works hand-in-hand with local authorities, caregivers, and volunteers to make sure every child is safe, secure, and has access to the necessary care they deserve.",
+    "learnMoreButton": "Learn More About Us"
+  }
+ ,
+ "services": {
+    "services": "Services",
+    "servicesAll": "Services - All Services"
+  },
+  "documents": {
+    "home":"Home",
+    "Schemeprograms":"Scheme Programs",
+    "invitationDevelopmentInspection": "Invitation for Inspection Development",
+    "proformaSpecialSchools": "Proforma for Inviting Proposals for Special Schools",
+    "invitingProposalsWorkshops": "Inviting Proposals for Workshops",
+    "maharashtraStateRights": "Maharashtra State Rights",
+    "cabinetDecisions": "Cabinet Decisions",
+    "scheme6": "Scheme 6",
+    "scheme7": "Scheme 7",
+    "scheme8": "Scheme 8",
+    "scheme9": "Scheme 9",
+    "scheme10": "Scheme 10",
+    "scheme11": "Scheme 11",
+    "scheme12": "Scheme 12",
+    "filterPlaceholder": "Filter schemes programs by title...",
+    "applyFilter": "Apply",
+    "title": "Title",
+    "date": "Date",
+    "viewDownload": "View / Download",
+    "view": "View",
+    "download": "Download"}
+
+
+
+    ,
+    
+    
+      "ngo": {
+        "title": "NGO's Detail",
+        "breadcrumbHome": "Home",
+        "breadcrumbNgo": "NGOs",
+        "filterPlaceholder": "Filter NGOs by name...",
+        "applyFilter": "Apply",
+        "sNo": "S. No.",
+        "name": "Name",
+        "mission": "Mission",
+        "contact": "Contact",
+        "website": "Website",
+        "pagination": "Pagination",
+        "ngos": [
+          {
+            "name": "Society for Development Activities",
+            "type": "Non-Governmental Organization",
+            "founded": "2012",
+            "founder": "Akshai Abraham",
+            "mission": "Civic Responsibility, Child Sexual Abuse",
+            "website": "https://www.projectkhel.org",
+            "address": "5/414, Viraj Khand, Gomti Nagar, Lucknow",
+            "contact": "contact@projectkhel.org"
+          },
+          {
+            "name": "Vidya and Child",
+            "type": "Non-Governmental Organization",
+            "founded": "1998",
+            "founder": "Supriya Akhaury",
+            "mission": "Education",
+            "website": "https://www.vidyaandchild.org",
+            "address": "Ambedkar Vihar, Sector 37, Noida",
+            "contact": "info@vidyaandchild.org"
+          }
+        ]
+      }
+   
+      
+      ,
+      
+      "lostChildren": {
+        "breadcrumbHome": "Home",
+        "breadcrumbPage": "Lost Children",
+        "title": "Lost Children Details",
+        "searchPlaceholder": "Search child by name...",
+        "applyFilter": "Apply Filter",
+        "sNo": "S.No",
+        "location": "Location",
+        "name": "Name",
+        "age": "Age",
+        "gender": "Gender",
+        "foundBy": "Found By",
+        "founderPhone": "Founder's Phone Number",
+        "status": "Status",
+        "detail": "View Details",
+        "edit": "Edit",
+        "children": {
+          "child1": {
+            "location": "New York",
+            "name": "John Doe",
+            "gender": "Male",
+            "foundBy": "Alice Smith",
+            "status": "Lost"
+          },
+          "child2": {
+            "location": "Los Angeles",
+            "name": "Jane Doe",
+            "gender": "Female",
+            "foundBy": "Bob Brown",
+            "status": "Found"
+          },
+          "child3": {
+            "location": "Chicago",
+            "name": "Mark Twain",
+            "gender": "Male",
+            "foundBy": "Sarah Connor",
+            "status": "Lost"
+          },
+          "child4": {
+            "location": "Houston",
+            "name": "Lucy Heart",
+            "gender": "Female",
+            "foundBy": "Tom Hanks",
+            "status": "Lost"
+          },
+          "child5": {
+            "location": "Philadelphia",
+            "name": "Sam Wilson",
+            "gender": "Male",
+            "foundBy": "Clark Kent",
+            "status": "Found"
+          }
+        }
+      }
+
+      ,
+      
+        "blogs": {
+          "breadcrumbHome": "Home",
+          "breadcrumbPage": "Photo Gallery",
+          "galleryTitle": "OUR PHOTOGALLERY",
+          "viewAllPosts": "View all post",
+          "celebration1Title": "Celebration 1",
+          "celebration1Description": "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
+          "celebration2Title": "Celebration 2",
+          "celebration2Description": "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
+          "celebration3Title": "Celebration 3",
+          "celebration3Description": "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
+          "celebration4Title": "Celebration 4",
+          "celebration4Description": "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
+          "celebration5Title": "Celebration 5",
+          "celebration5Description": "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
+          "celebration6Title": "Celebration 6",
+          "celebration6Description": "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
+          "celebration7Title": "Celebration 7",
+          "celebration7Description": "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be."
+        }
+      
+      ,
+      "contact": {
+        "contactheading" :"Contact Us",
+        "title": "Contact List",
+        "headers": {
+          "sno": "S.No",
+          "location": "Location",
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "email": "Email",
+          "phoneNumber": "Phone Number"
+        }
+      }
+
+      ,
+      
+        "S_No": "S.No",
+        "Location": "Location",
+        "FirstName": "First Name",
+        "LastName": "Last Name",
+        "Email": "Email",
+        "PhoneNumber": "Phone Number",
+        "NewYork": "New York",
+        "John": "John",
+        "Doe": "Doe",
+        "Jane": "Jane",
+        "Smith": "Smith",
+        "Michael": "Michael",
+        "Johnson": "Johnson",
+        "LosAngeles": "Los Angeles",
+        "Chicago": "Chicago"
+      
+
+
+  }
+  

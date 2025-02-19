@@ -1,0 +1,69 @@
+.donation-section {
+background-image: url("/public/images/child-bg-donation.jpg");
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    
+  }
+  
+  .image-container {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #bd1e51;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.67);
+    padding: 1rem;
+    border-radius: 2px;
+  }
+  
+  .btn-light {
+    background: linear-gradient(to right, #bd1e51, #bd1e51, #bd1e51);
+    background-color: #bd1e51;
+    border: none;
+    color: white;
+  }
+  
+  .btn-light:hover {
+    background: linear-gradient(to right, #fcc653, #bd1e51, #fcc653);
+    border: none;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .content-overlay {
+      padding: 0.5rem;
+    }
+  
+    .btn-light {
+      padding: 0.5rem 1rem;
+    }
+  }
+  

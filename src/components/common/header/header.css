@@ -1,0 +1,55 @@
+/* Ensure no horizontal scrollbars */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Make sure navbar items don't wrap unnecessarily */
+.navbar-nav {
+  white-space: nowrap;  /* Prevents wrapping of text */
+}
+
+/* Ensure the navbar container is responsive */
+.container-fluid {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Default font size for large screens */
+.navbar-nav {
+  font-size: 1.1rem;  /* Slightly reduced font size */
+}
+
+/* Adjust the font-size for medium and smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav {
+    font-size: 0.95rem; /* Smaller font for tablets and small screens */
+  }
+
+  .navbar-brand img {
+    max-width: 140px; /* Reduce logo size on smaller screens */
+  }
+
+  .navbar-collapse {
+    justify-content: center; /* Ensure center alignment on collapse */
+  }
+}
+
+/* For even smaller screens */
+@media (max-width: 576px) {
+  .navbar-nav {
+    font-size: 0.85rem;  /* Further reduce font size for very small screens */
+  }
+
+  .navbar-brand img {
+    max-width: 120px; /* Further reduce logo size */
+  }
+
+  /* Align button better on very small screens */
+  .btn-outline-success {
+    padding: 5px 10px;
+    font-size: 0.9rem; /* Smaller font for the button */
+  }
+}

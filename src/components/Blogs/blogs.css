@@ -1,0 +1,18 @@
+@media (max-width: 1024px) {
+    .blogs{
+      min-width: 700px;
+     
+    }
+  }
+  @media (max-width: 768px) {
+    .blogs{
+      min-width: 700px;
+     
+    }
+  }
+  @media (max-width: 328px) {
+    .blogs{
+      min-width: 700px;
+     
+    }
+  }

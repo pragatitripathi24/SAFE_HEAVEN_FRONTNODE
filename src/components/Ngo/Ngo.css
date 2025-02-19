@@ -1,0 +1,17 @@
+.table thead th {
+    font-size: 1.34rem;
+    background-color: #962145;
+    color: black;
+  }
+  
+  .table tbody tr td:first-child {
+    background-color: #ffffff;
+  }
+  
+  .table,
+  .table th,
+  .table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
