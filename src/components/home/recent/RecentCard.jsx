@@ -1,10 +1,10 @@
 import React from "react";
-import { useTranslation } from "react-i18next"; // Importing useTranslation hook
+import { useTranslation } from "react-i18next";
 import { successStories } from "../../data/Data";
-import Marquee from "react-fast-marquee"; // Ensure to install: npm install react-fast-marquee
+import Marquee from "react-fast-marquee";
 
 const RecentCard = () => {
-  const { t } = useTranslation(); // Destructuring t function from useTranslation
+  const { t } = useTranslation();
 
   const marqueeContainerStyle = {
     overflow: "hidden",
@@ -13,7 +13,7 @@ const RecentCard = () => {
 
   const cardStyle = {
     height: "350px",
-    width: "300px", // Adjust card width as needed
+    width: "300px",
     margin: "10px",
     borderRadius: "10px",
     padding: "15px",
@@ -70,21 +70,16 @@ const RecentCard = () => {
                     marginBottom: "8px",
                   }}
                 >
-                  {/* Translate category text */}
                   <span style={categorySpanStyle}>{t('recent.category')}</span>
                   <i className="fa fa-heart"></i>
                 </div>
-                {/* Translate title */}
-                <h4>{t(`recent.title.${title}`)}</h4>
-                {/* Translate location */}
+                <h4>{title}</h4>
                 <p>
-                  <i className="fa fa-location-dot"></i> {t(`recent.location.${location}`)}
+                  <i className="fa fa-location-dot"></i> {location}
                 </p>
-                {/* Translate description */}
-                <p>{t(`recent.description.${description}`)}</p>
+                <p>{description}</p>
               </div>
               <div style={buttonContainerStyle}>
-                {/* Translate "Read More" */}
                 <button style={buttonStyle}>{t('recent.readMore')}</button>
               </div>
             </div>

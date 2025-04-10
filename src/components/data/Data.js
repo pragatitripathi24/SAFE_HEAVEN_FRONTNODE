@@ -7,10 +7,10 @@ export const nav = [
     text: "NAV2.ABOUT",
     path: "/about",
   },
-  {
-    text: "NAV2.SERVICES",
-    path: "/services",
-  },
+  // {
+  //   text: "NAV2.SERVICES",
+  //   path: "/services",
+  // },
   {
     text: "NAV2.SCHEMES",
     path: "/schemes",
@@ -29,12 +29,12 @@ export const nav = [
   // },
   {
     text: "NAV2.ADOPTION",
-    path: "/adoption",
+    path: "/adop",
   },
-  {
-    text: "NAV2.MEDIA",
-    path: "/media",
-  },
+  // {
+  //   text: "NAV2.MEDIA",
+  //   path: "/media",
+  // },
   {
     text: "NAV2.CONTACT",
     path: "/contact",
@@ -67,6 +67,14 @@ export const featured = [
     name: "featured.name5",
     total: "featured.total5",
   },
+  {
+    cover: "../images/hero/h1.png",
+    name: "featured.name1",  // Key for translation
+    total: "featured.total1",  // Key for translation
+  },
+ 
+
+
 ];
 
 
@@ -74,53 +82,54 @@ export const successStories = [
   {
     id: 1,
     cover: "../images/success/s-1.png",
-    title: "Finding Hope: A Family Reunited",
-    location: "New York, USA",
-    description: "After months of searching, we helped reunite a family with their missing child.",
+    title: "Celebration of Women’s Day 2025",
+    location: "India",
+    description: "Empowering messages and initiatives shared nationwide to honor and support women and girls.",
   },
   {
     id: 2,
     cover: "../images/success/s-2.png",
-    title: "Safe Haven: A New Beginning",
-    location: "London, UK",
-    description: "A young girl found a loving home after being reported missing for weeks.",
+    title: "National Workshop on Reimagining ICDS 2030",
+    location: "NITI Aayog, New Delhi",
+    description: "Experts gathered to strategize the future of Integrated Child Development Services.",
   },
   {
     id: 3,
     cover: "../images/success/s-3.png",
-    title: "A Boy's Journey Back Home",
-    location: "Toronto, Canada",
-    description: "Thanks to our community outreach, a lost boy was safely returned to his family.",
+    title: "Inauguration of 324 Creches in Haryana",
+    location: "Haryana Niwas",
+    description: "Hon’ble CM and WCD Minister proudly inaugurated 324 creches to support working mothers and child.",
   },
   {
     id: 4,
     cover: "../images/success/s-4.png",
-    title: "Restoring Smiles: A Family Reunited",
-    location: "Mumbai, India",
-    description: "A heartfelt reunion of a family after a long and arduous search.",
+    title: "10 Years of Beti Bachao Beti Padhao",
+    location: "Haryana, India",
+    description: "A decade of impactful work in protecting and educating the girl child was celebrated across the state.",
   },
   {
     id: 5,
     cover: "../images/success/s-5.png",
-    title: "Safe Passage: Helping Children Find Their Way",
-    location: "Sydney, Australia",
-    description: "We assisted a group of children in finding their way back to safety during a crisis.",
+    title: "State-Level Child Welfare Training",
+    location: "Bhopal, Madhya Pradesh",
+    description: "Social workers participated in a training session to improve local child safety and development programs.",
   },
   {
     id: 6,
     cover: "../images/success/s-6.png",
-    title: "Hope Restored: A Child's Return",
-    location: "Berlin, Germany",
-    description: "After a detailed investigation, we successfully brought a child back to their family.",
+    title: "Anganwadi Workers Felicitated",
+    location: "Rajasthan, India",
+    description: "Frontline child care providers were honored for their dedication and service to rural communities.",
   },
   {
     id: 7,
     cover: "../images/success/s-7.png",
-    title: "New Beginnings: A Fresh Start",
-    location: "Rio de Janeiro, Brazil",
-    description: "A child, once lost, is now thriving in a caring and supportive environment.",
+    title: "Nutrition Awareness Drive for Children",
+    location: "Kolkata, West Bengal",
+    description: "Local health officers organized a drive to educate parents about child nutrition and hygiene.",
   },
 ];
+
 
 export const list = [
   {

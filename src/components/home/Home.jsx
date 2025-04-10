@@ -7,17 +7,17 @@ import Price from "./price/Price"
 import Recent from "./recent/Recent"
 import Team from "./team/Team"
 import Donation from "./Donation/Donation"
+import Suggestive from "./Suggestive/Suggestive"
 const Home = () => {
   return (
     <>
       <Hero />
       <Featured />
       <Recent />
-      <Donation />
-      <Awards />
-      <Location />
-      {/* <Team /> */}
-      {/* <Price /> */}
+      {/* <Donation /> */}
+     
+   <Suggestive />
+   <Awards />
     </>
   )
 }

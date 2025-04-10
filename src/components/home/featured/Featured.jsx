@@ -10,12 +10,9 @@ const Featured = () => {
   return (
     <>
       <section className='featured background'>
-        <div className='container'>
+        <div className=''>
           {/* Apply translations using t() */}
-          <Heading
-            title={t('featured.title')}  // Translation key for "Child Welfare Committee"
-            subtitle={t('featured.subtitle')}  // Translation key for "Our Initiatives and Support"
-          />
+          
           <FeaturedCard />
         </div>
       </section>

@@ -10,12 +10,9 @@ const Recent = () => {
   return (
     <>
       <section className='recent padding'>
-        <div className='container'>
+        <div className=''>
           {/* Apply translations using t() */}
-          <Heading
-            title={t('recent.titlemain')}  // Translation key for "Success Stories"
-            subtitle={t('recent.subtitlemain')}  // Translation key for "Discover how we have made a difference in the lives of children and families."
-          />
+         
           <RecentCard />
         </div>
       </section>

@@ -13,6 +13,7 @@ import Ngo from "../Ngo/Ngo"
 import LostChildren from "../LostChildren/LostChildren"
 import BlogsComp from "../Blogs/BlogsComp"
 import Marquee from "../home/Marquee/Marquee"
+import Adoption from "../home/Adoption/Adoption"
 
 const Pages = () => {
   return (
@@ -27,6 +28,7 @@ const Pages = () => {
           <Route exact path='/schemes' component={Schemes} />
           <Route exact path='/ngo' component={Ngo} />
           <Route exact path='/lc' component={LostChildren} />
+          <Route exact path='/adop' component={Adoption} />
           <Route exact path='/media' component={BlogsComp} />
           <Route exact path='/contact' component={Contact} />
         </Switch>

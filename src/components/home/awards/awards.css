@@ -18,6 +18,8 @@
 }
 
 .stat-box p {
+  font-size: 18px;
+  font-weight: 500;
   color: grey;
   margin-top: 10px;
 }

@@ -1,113 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import React from "react";
+import innerBanner from "../../images/LandingPage/im1.jpg";
+import img1 from "../../images/LandingPage/im1.jpg";
+import img2 from "../../images/LandingPage/im1.jpg";
+import img3 from "../../images/LandingPage/im1.jpg";
+import img4 from "../../images/LandingPage/im1.jpg";
+import img5 from "../../images/LandingPage/im1.jpg";
+import img6 from "../../images/LandingPage/im1.jpg";
 import { Link } from "react-router-dom";
-
-const SchemesProgram = () => {
+import { useTranslation } from "react-i18next";
+const Schemes = () => {
   const { t } = useTranslation();
-
-  // Define state for documents
-  const [documents, setDocuments] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredDocs, setFilteredDocs] = useState([]);
-
-  // Update documents titles when the language changes
-  useEffect(() => {
-    const updatedDocuments = [
-      {
-        title: t("documents.invitationDevelopmentInspection"),
-        date: "17/09/2024",
-        size: "555 KB",
-      },
-      {
-        title: t("documents.proformaSpecialSchools"),
-        date: "12/09/2024",
-        size: "6 MB",
-      },
-      {
-        title: t("documents.invitingProposalsWorkshops"),
-        date: "12/09/2024",
-        size: "2 MB",
-      },
-      {
-        title: t("documents.maharashtraStateRights"),
-        date: "05/09/2024",
-        size: "845 KB",
-      },
-      {
-        title: t("documents.cabinetDecisions"),
-        date: "10/01/2024",
-        size: "119 KB",
-      },
-      {
-        title: t("documents.scheme6"),
-        date: "10/01/2024",
-        size: "200 KB",
-      },
-      {
-        title: t("documents.scheme7"),
-        date: "10/01/2024",
-        size: "300 KB",
-      },
-      {
-        title: t("documents.scheme8"),
-        date: "10/01/2024",
-        size: "400 KB",
-      },
-      {
-        title: t("documents.scheme9"),
-        date: "10/01/2024",
-        size: "500 KB",
-      },
-      {
-        title: t("documents.scheme10"),
-        date: "10/01/2024",
-        size: "600 KB",
-      },
-      {
-        title: t("documents.scheme11"),
-        date: "10/01/2024",
-        size: "700 KB",
-      },
-      {
-        title: t("documents.scheme12"),
-        date: "10/01/2024",
-        size: "800 KB",
-      },
-    ];
-
-    setDocuments(updatedDocuments);
-    setFilteredDocs(updatedDocuments); // Set the filtered documents initially as well
-  }, [t]);
-
-  // Pagination logic
-  const rowsPerPage = currentPage === 1 ? 10 : 2;
-  const totalPages =
-    currentPage === 1
-      ? Math.ceil(filteredDocs.length / 10)
-      : Math.ceil((filteredDocs.length - 10) / 2) + 1;
-
-  const indexOfLastDoc = currentPage === 1 ? rowsPerPage : 10 + (currentPage - 1) * rowsPerPage;
-  const indexOfFirstDoc = currentPage === 1 ? 0 : 10 + (currentPage - 2) * rowsPerPage;
-
-  const currentDocs = filteredDocs.slice(indexOfFirstDoc, indexOfLastDoc);
-
-  // Handle search input change
-  const handleSearchInputChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  // Apply filter based on search term
-  const applyFilter = () => {
-    const filtered = documents.filter((doc) =>
-      doc.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredDocs(filtered);
-    setCurrentPage(1); // Reset to the first page when applying filters
-  };
-
   return (
-    <div className="container mt-3 mb-5">
+  
+        <div className="container mt-3 mb-5">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item fs-6">
@@ -124,85 +29,145 @@ const SchemesProgram = () => {
       <p style={{ color: "black", letterSpacing: "2px", textTransform: "capitalize", textAlign: "center" }}>
         <strong className="fs-2">{t("documents.Schemeprograms")} <br /></strong>
       </p>
+    
+      
 
-      {/* Search filter section */}
-      <div className="filter-section mb-3 d-flex justify-content-center">
-        <div className="input-group" style={{ width: "50%" }}>
-          <input
-            type="text"
-            className="form-control"
-            placeholder={t("documents.filterPlaceholder")}
-            value={searchTerm}
-            onChange={handleSearchInputChange}
-          />
-          <button
-            className="btn"
-            type="button"
-            onClick={applyFilter}
-            style={{ color: "white", backgroundColor: "black" }}
-          >
-            <i className="fas fa-search"></i>
-            <span className="ml-1">{t("documents.applyFilter")}</span>
-          </button>
-        </div>
-      </div>
+      <section className="service-style-four mx-5 mt-5 mb-5">
+        <div className="auto-container">
+          <h4 className="pb-3 color_blue pmay-heading-margin">Introduction</h4>
+          <p className="text-black">
+            The Child Welfare Community Schemes aim to uplift underprivileged children by providing access to education, healthcare, nutrition, and shelter. These schemes are designed to offer holistic support to ensure every child gets a fair chance at life and development in a safe and nurturing environment.
+          </p>
 
-      {/* Table displaying document list */}
-      <div className="table-responsive mb-5">
-        <table className="table table-bordered table-hover">
-          <thead className="thead-dark text-center">
-            <tr>
-              <th scope="col">{t("documents.title")}</th>
-              <th scope="col">{t("documents.date")}</th>
-              <th scope="col">{t("documents.viewDownload")}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentDocs.map((doc, index) => (
-              <tr key={index}>
-                <td style={{ height: "60px", verticalAlign: "middle" }}>{doc.title}</td>
-                <td className="text-center" style={{ height: "60px", verticalAlign: "middle" }}>
-                  {doc.date}
-                </td>
-                <td style={{ height: "60px", verticalAlign: "middle" }}>
-                  <Link to="#" className="text-danger ml-3">
-                    {t("documents.view")} <i className="fas fa-file-pdf ml-1"></i>
-                  </Link>{" "}
-                  |{" "}
-                  <Link to="#" className="text-success ml-3">
-                    {t("documents.download")} <i className="fas fa-download ml-1"></i>
-                  </Link>{" "}
-                  ({doc.size})
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+          <div className="table-responsive mt-3">
+            <table className="table table-bordered">
+              <thead className="text-center">
+                <tr>
+                  <th style={{ backgroundColor: "#8b1f40", color: "#fff" }}>Sr. No</th>
+                  <th style={{ backgroundColor: "#8b1f40", color: "#fff" }}>Scheme</th>
+                  <th style={{ backgroundColor: "#8b1f40", color: "#fff" }}>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Bal Shakti</td>
+                  <td>Rehabilitation and education support for children in vulnerable conditions.</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Sneha Aahar</td>
+                  <td>Daily nutritious meals for children in under-resourced communities.</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Shiksha Setu</td>
+                  <td>Bridge schooling program to integrate drop-out children back into mainstream education.</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Bal Suraksha</td>
+                  <td>Protection services for children facing abuse, neglect, or exploitation.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-      {/* Pagination */}
-      <nav>
-        <ul className="pagination justify-content-center">
-          {[...Array(totalPages)].map((_, i) => (
-            <li key={i} className={`page-item ${i + 1 === currentPage ? "active" : ""}`}>
-              <button
-                style={{
-                  backgroundColor: currentPage === i + 1 ? "#962145" : "#fff",
-                  color: "black",
-                  outline: "none",
-                  boxShadow: "none",
-                }}
-                onClick={() => setCurrentPage(i + 1)}
-                className="page-link"
-              >
-                {i + 1}
-              </button>
+          <h5 className="color_blue">
+            Implementation in Local Municipal Areas
+          </h5>
+          <ul className="pt-3 pmay-list">
+            <li>
+              <b>
+                Bal Shakti and Shiksha Setu programs have been launched in 12 slum clusters benefiting over 4,000 children.
+              </b>
             </li>
-          ))}
-        </ul>
-      </nav>
+            <li>
+              <b>Registration ID: CWC/PMU/CHW123456</b>
+            </li>
+            <li>
+              <b>
+                Facilities include mobile classrooms, child nutrition centers, counseling booths, and support desks for parents.
+              </b>
+            </li>
+            <li>
+              <b>Infrastructure work for three child shelters is currently underway.</b>
+            </li>
+          </ul>
+
+          <h5 className="pt-2 color_blue">
+            Summary of Progress as of 2024
+          </h5>
+          <ul className="pt-3 pmay-list">
+            <li>
+              <b>
+                Over 8,500 children enrolled in various programs, with 1,200 re-integrated into formal schools.
+              </b>
+            </li>
+            <li>
+              <b>Healthcare screenings conducted for 3,400 children with follow-up care ensured.</b>
+            </li>
+          </ul>
+
+          <h5 className="color_blue">
+            Component-wise Details of Child Welfare Schemes
+          </h5>
+          <div className="mt-3">
+            <div className="table-responsive">
+              <table className="table table-bordered">
+                <thead className="text-center">
+                  <tr>
+                    <th style={{ backgroundColor: "#8b1f40", color: "#fff" }}>Component</th>
+                    <th style={{ backgroundColor: "#8b1f40", color: "#fff" }}>Beneficiaries</th>
+                    <th style={{ backgroundColor: "#8b1f40", color: "#fff" }}>Budget (In Lakhs)</th>
+                    <th style={{ backgroundColor: "#8b1f40", color: "#fff" }}>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bal Shakti</td>
+                    <td>1800</td>
+                    <td>850</td>
+                    <td>Running in 10 local wards</td>
+                  </tr>
+                  <tr>
+                    <td>Sneha Aahar</td>
+                    <td>2400</td>
+                    <td>720</td>
+                    <td>Operational in 15 nutrition centers</td>
+                  </tr>
+                  <tr>
+                    <td>Shiksha Setu</td>
+                    <td>1450</td>
+                    <td>430</td>
+                    <td>Expansion planned in 5 more locations</td>
+                  </tr>
+                  <tr>
+                    <td>Bal Suraksha</td>
+                    <td>900</td>
+                    <td>650</td>
+                    <td>Ongoing with 24/7 child helpline</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h5 className="color_blue">
+            Project Overview: Integrated Child Welfare Development Mission
+          </h5>
+
+          <div className="row mt-3 pmay_img">
+            {[img1, img2, img3, img4, img5, img6].map((img, i) => (
+              <div className="col-md-4" key={i}>
+                <img src={img} alt={`img${i + 1}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
-export default SchemesProgram;
+export default Schemes;

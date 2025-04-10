@@ -17,32 +17,33 @@ const Awards = () => {
 
   return (
     <>
-      <section className='awards padding'>
-        <div className='container'>
-          {/* Translate Heading */}
-          <Heading
-            title={t('awards.title')}
-            subtitle={t('awards.subtitle')}
-          />
+     <section className='mb-5'>
+  <div className='container'>
+    <div className='row d-flex align-items-start flex-wrap gap-4'>
+    
 
-          <div className='content grid4 mtop'>
-            {statistics.map((stat, index) => (
-              <div className='box' key={index}>
-                <div className='stat-box'>
-                  <div className='icon'>
-                    <span>🏆</span>
-                  </div>
-                  <h1>
-                    <CountUp start={0} end={stat.count} duration={2.5} />
-                  </h1>
-                  {/* Translate Statistics */}
-                  <p>{t(`awards.statistics.${stat.id}.name`)}</p>
+      {/* Statistics grid on the right side */}
+      <div className='col-12 col-md-8'>
+        <div className='content grid4 mtop'>
+          {statistics.map((stat, index) => (
+            <div className='box' key={index}>
+              <div className='stat-box'>
+                <div className='icon'>
+                  <span>🏆</span>
                 </div>
+                <h1>
+                  <CountUp start={0} end={stat.count} duration={2.5} />
+                </h1>
+                <p>{t(`awards.statistics.${stat.id}.name`)}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
     </>
   );
 };
