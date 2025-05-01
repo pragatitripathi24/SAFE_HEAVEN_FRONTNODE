@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Button, Card, Table } from "react-bootstrap";
 import { FaRegCheckCircle, FaUser, FaFileAlt, FaPhone, FaEnvelope, FaUpload, FaChild } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const successStories = [
   {
-    title: "A New Beginning for Anjali",
+    title: "successStories.anjali.title",
     image: "/images/Adoption/ad1.png",
-    content: "Anjali found her forever home and now enjoys school and dancing with her new family."
+    content: "successStories.anjali.content"
   },
   {
-    title: "Rahul's Bright Future",
+    title: "successStories.rahul.title",
     image: "/images/Adoption/ad2.png",
-    content: "Rahul was adopted last year and dreams of becoming a doctor."
+    content: "successStories.rahul.content"
   },
   {
-    title: "Meera's Smile Returns",
+    title: "successStories.meera.title",
     image: "/images/Adoption/ad3.png",
-    content: "Meera's journey to healing began when she was adopted by a loving couple."
+    content: "successStories.meera.content"
   }
 ];
 
 export default function AdoptionPage() {
+  const { t } = useTranslation();
   const [storyIndex, setStoryIndex] = useState(0);
 
   useEffect(() => {
@@ -39,15 +41,15 @@ export default function AdoptionPage() {
         <Col md={8}>
           <Card className="h-100 bg-light">
             <Card.Body>
-              <Card.Title className="fw-bold">Adoption Process</Card.Title>
-              <Card.Text className="">
-                Adopting a child is a beautiful journey that changes lives. The process includes:
+              <Card.Title className="fw-bold">{t("adoption.processTitle")}</Card.Title>
+              <Card.Text>
+                {t("adoption.processIntro")}
                 <ul>
-                  <li><FaRegCheckCircle className="me-2 text-success" />Registration with a licensed adoption agency</li>
-                  <li><FaRegCheckCircle className="me-2 text-success" />Pre-adoption counseling</li>
-                  <li><FaRegCheckCircle className="me-2 text-success" />Home study and background checks</li>
-                  <li><FaRegCheckCircle className="me-2 text-success" />Matching with a child</li>
-                  <li><FaRegCheckCircle className="me-2 text-success" />Legal procedures and final adoption order</li>
+                  <li><FaRegCheckCircle className="me-2 text-success" />{t("adoption.steps.registration")}</li>
+                  <li><FaRegCheckCircle className="me-2 text-success" />{t("adoption.steps.counseling")}</li>
+                  <li><FaRegCheckCircle className="me-2 text-success" />{t("adoption.steps.study")}</li>
+                  <li><FaRegCheckCircle className="me-2 text-success" />{t("adoption.steps.matching")}</li>
+                  <li><FaRegCheckCircle className="me-2 text-success" />{t("adoption.steps.legal")}</li>
                 </ul>
               </Card.Text>
             </Card.Body>
@@ -55,10 +57,10 @@ export default function AdoptionPage() {
         </Col>
         <Col md={4}>
           <Card className="h-100 bg-light">
-            <Card.Img variant="top" src={currentStory.image} alt={currentStory.title} />
+            <Card.Img variant="top" src={currentStory.image} alt={t(currentStory.title)} />
             <Card.Body>
-              <Card.Title className="fw-bold">{currentStory.title}</Card.Title>
-              <Card.Text>{currentStory.content}</Card.Text>
+              <Card.Title className="fw-bold">{t(currentStory.title)}</Card.Title>
+              <Card.Text>{t(currentStory.content)}</Card.Text>
             </Card.Body>
           </Card>
         </Col>
@@ -69,87 +71,83 @@ export default function AdoptionPage() {
         <Col>
           <Card className="bg-light">
             <Card.Body>
-              <Card.Title className="fw-bold">Adoptive Parent Application Form</Card.Title>
+              <Card.Title className="fw-bold">{t("form.title")}</Card.Title>
               <Form>
                 <Row className="mb-3">
                   <Col md={6}>
                     <Form.Group controlId="formFullName">
-                      <Form.Label><FaUser className="me-2" />Full Name</Form.Label>
-                      <Form.Control type="text" placeholder="Enter your full name" required />
+                      <Form.Label><FaUser className="me-2" />{t("form.fullName")}</Form.Label>
+                      <Form.Control type="text" placeholder={t("form.fullNamePlaceholder")} required />
                     </Form.Group>
                   </Col>
                   <Col md={6}>
                     <Form.Group controlId="formAge">
-                      <Form.Label>Age</Form.Label>
-                      <Form.Control type="number" placeholder="Enter your age" required />
+                      <Form.Label>{t("form.age")}</Form.Label>
+                      <Form.Control type="number" placeholder={t("form.agePlaceholder")} required />
                     </Form.Group>
                   </Col>
                 </Row>
                 <Row className="mb-3">
                   <Col md={6}>
                     <Form.Group controlId="formMaritalStatus">
-                      <Form.Label>Marital Status</Form.Label>
+                      <Form.Label>{t("form.maritalStatus")}</Form.Label>
                       <Form.Select required>
-                        <option>Married</option>
-                        <option>Single</option>
-                        <option>Divorced</option>
+                        <option>{t("form.married")}</option>
+                        <option>{t("form.single")}</option>
+                        <option>{t("form.divorced")}</option>
                       </Form.Select>
                     </Form.Group>
                   </Col>
                   <Col md={6}>
                     <Form.Group controlId="formOccupation">
-                      <Form.Label>Occupation</Form.Label>
-                      <Form.Control type="text" placeholder="Enter your occupation" required />
+                      <Form.Label>{t("form.occupation")}</Form.Label>
+                      <Form.Control type="text" placeholder={t("form.occupationPlaceholder")} required />
                     </Form.Group>
                   </Col>
                 </Row>
                 <Row className="mb-3">
                   <Col md={6}>
                     <Form.Group controlId="formContact">
-                      <Form.Label><FaPhone className="me-2" />Contact Number</Form.Label>
+                      <Form.Label><FaPhone className="me-2" />{t("form.contact")}</Form.Label>
                       <Form.Control type="text" required />
                     </Form.Group>
                   </Col>
                   <Col md={6}>
                     <Form.Group controlId="formEmail">
-                      <Form.Label><FaEnvelope className="me-2" />Email Address</Form.Label>
+                      <Form.Label><FaEnvelope className="me-2" />{t("form.email")}</Form.Label>
                       <Form.Control type="email" required />
                     </Form.Group>
                   </Col>
                 </Row>
-             <Row>
-              <Col md={6}>
-              <Form.Group controlId="formAddress" className="mb-3">
-                  <Form.Label>Residential Address</Form.Label>
-                  <Form.Control as="textarea" rows={2} required />
-                </Form.Group>
-                </Col>
-                <Col md={6}>
-                <Form.Group controlId="formPreferences" className="mb-3">
-                  <Form.Label><FaChild className="me-2" />Child Preferences (age, gender, etc.)</Form.Label>
-                  <Form.Control as="textarea" rows={2} />
-                </Form.Group>
-                </Col>
-             </Row>
-             <Row>
-              <Col md={6}>
-              <Form.Group controlId="formReason" className="mb-3">
-                  <Form.Label>Why do you want to adopt?</Form.Label>
-                  <Form.Control as="textarea" rows={3} required />
-                </Form.Group>
-                </Col>
-                <Col md={6}>
-                <Form.Group controlId="formDocuments" className="mb-3">
-                  <Form.Label><FaUpload className="me-2" />Upload Required Documents</Form.Label>
-                  <Form.Control type="file" multiple required />
-                </Form.Group>
-                </Col>
-             </Row>
-               
-              
-                <Button variant="primary" type="submit">
-                  Submit Application
-                </Button>
+                <Row>
+                  <Col md={6}>
+                    <Form.Group controlId="formAddress" className="mb-3">
+                      <Form.Label>{t("form.address")}</Form.Label>
+                      <Form.Control as="textarea" rows={2} required />
+                    </Form.Group>
+                  </Col>
+                  <Col md={6}>
+                    <Form.Group controlId="formPreferences" className="mb-3">
+                      <Form.Label><FaChild className="me-2" />{t("form.preferences")}</Form.Label>
+                      <Form.Control as="textarea" rows={2} />
+                    </Form.Group>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col md={6}>
+                    <Form.Group controlId="formReason" className="mb-3">
+                      <Form.Label>{t("form.reason")}</Form.Label>
+                      <Form.Control as="textarea" rows={3} required />
+                    </Form.Group>
+                  </Col>
+                  <Col md={6}>
+                    <Form.Group controlId="formDocuments" className="mb-3">
+                      <Form.Label><FaUpload className="me-2" />{t("form.documents")}</Form.Label>
+                      <Form.Control type="file" multiple required />
+                    </Form.Group>
+                  </Col>
+                </Row>
+                <Button variant="primary" type="submit">{t("form.submit")}</Button>
               </Form>
             </Card.Body>
           </Card>
@@ -161,33 +159,33 @@ export default function AdoptionPage() {
         <Col>
           <Card className="bg-light">
             <Card.Body>
-              <Card.Title className="fw-bold">Adoption Resources & Legal Guidelines</Card.Title>
+              <Card.Title className="fw-bold">{t("resources.title")}</Card.Title>
               <Table striped bordered hover responsive>
                 <thead>
                   <tr>
-                    <th>Title</th>
-                    <th>Download Link</th>
+                    <th>{t("resources.table.title")}</th>
+                    <th>{t("resources.table.link")}</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Comprehensive Adoption Guide</td>
-                    <td><a href="/docs/adoption-guide.pdf" target="_blank" rel="noreferrer">Download PDF</a></td>
+                    <td>{t("resources.items.guide")}</td>
+                    <td><a href="/docs/adoption-guide.pdf" target="_blank" rel="noreferrer">{t("resources.download")}</a></td>
                   </tr>
                   <tr>
-                    <td>Legal Procedure Overview</td>
-                    <td><a href="/docs/legal-procedure.pdf" target="_blank" rel="noreferrer">Download PDF</a></td>
+                    <td>{t("resources.items.legal")}</td>
+                    <td><a href="/docs/legal-procedure.pdf" target="_blank" rel="noreferrer">{t("resources.download")}</a></td>
                   </tr>
                   <tr>
-                    <td>List of Licensed Adoption Agencies</td>
-                    <td><a href="/docs/agency-list.pdf" target="_blank" rel="noreferrer">Download PDF</a></td>
+                    <td>{t("resources.items.agencies")}</td>
+                    <td><a href="/docs/agency-list.pdf" target="_blank" rel="noreferrer">{t("resources.download")}</a></td>
                   </tr>
                   <tr>
-                    <td>Frequently Asked Questions</td>
-                    <td><a href="/docs/faqs.pdf" target="_blank" rel="noreferrer">Download PDF</a></td>
+                    <td>{t("resources.items.faqs")}</td>
+                    <td><a href="/docs/faqs.pdf" target="_blank" rel="noreferrer">{t("resources.download")}</a></td>
                   </tr>
                   <tr>
-                    <td>Adoption Helpline</td>
+                    <td>{t("resources.items.helpline")}</td>
                     <td><strong>1800-123-4567</strong></td>
                   </tr>
                 </tbody>

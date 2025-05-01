@@ -31,9 +31,10 @@ const Nav1 = () => {
           <div className="vertical-line1"></div>
 
           
-          <a href="#home" className="nav-link text-white" title={t("NAV1.SKIP_TO_MAIN")}>
+        <Link to="/"   className="nav-link text-white" title={t("NAV1.SKIP_TO_MAIN")}>
             {t("NAV1.SKIP_TO_MAIN")}
-          </a>
+          
+        </Link>
           {/* <div className="vertical-line1"></div>
           <i className="fas fa-search" title="Search Icon"></i> */}
           <div className="vertical-line1"></div>
@@ -59,12 +60,12 @@ const Nav1 = () => {
             </div>
           </div>
 
-          <div className="vertical-line1"></div>
+          {/* <div className="vertical-line1"></div>
           <div className="d-flex align-items-center">
             <button className="btn text-white">
               <i className="fa fa-sign-out"></i> {t("NAV1.SIGN_IN")}
             </button>
-          </div>
+          </div> */}
 
           <div className="vertical-line1"></div>
         </div>

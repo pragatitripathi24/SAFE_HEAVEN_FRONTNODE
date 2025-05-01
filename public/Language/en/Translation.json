@@ -155,13 +155,28 @@
     "legalText": "© 2024 CWC Initiative. Designed by Pragati."
   },
   "about": {
-    "aboutUs": "About Us",
-    "aboutUsTitle": "About Us - Protecting Every Child",
-    "missionTitle": "Our Mission and Story",
-    "missionSubtitle": "Learn how we work to ensure the safety and well-being of children everywhere.",
-    "missionDescription1": "The Child Welfare Committee (CWC) is dedicated to safeguarding the rights of children and ensuring their safety across communities. Our platform bridges the gap between lost children and their families by providing a streamlined case management process that prioritizes quick action and protection.",
-    "missionDescription2": "From providing support services to organizing awareness campaigns, our agency works hand-in-hand with local authorities, caregivers, and volunteers to make sure every child is safe, secure, and has access to the necessary care they deserve.",
-    "learnMoreButton": "Learn More About Us"
+  "missionTitle": "Our Mission",
+    "missionSubtitle": "Dedicated to Child Welfare and Protection",
+    "missionDescription1": "We are committed to ensuring the safety, well-being, and rights of every child through a collaborative and community-centered approach.",
+    "missionDescription2": "Our focus lies in intervention, rehabilitation, and support for children in need, especially those affected by abuse, neglect, or trafficking.",
+    "missionDescription3": "Through awareness campaigns, capacity building, and legal frameworks, we aim to create a safer environment for children across the region.",
+    "learnMoreButton": "Learn More",
+
+    "additionalParagraph": "Our team works hand-in-hand with local authorities, NGOs, and volunteers to ensure every child's voice is heard and needs are met. From legal aid to psychological support, our services cover a wide spectrum of child welfare.",
+    
+    "approachTitle": "Our approach includes:",
+    "approachPoints": {
+      "point1": "🛡️ Ensuring child safety and rights across all districts",
+      "point2": "🎓 Promoting inclusive education opportunities",
+      "point3": "💬 Multilingual support to bridge communication gaps",
+      "point4": "🤝 Reuniting families and empowering foster care",
+      "point5": "📊 Data-driven tracking and reporting of active cases"
+    },
+    
+    "finalParagraph": "We envision a society where children are protected, nurtured, and given every opportunity to grow with dignity."
+,
+"visionStatement": "We envision a society where children are protected, nurtured, and given every opportunity to grow with dignity."
+
   }
  ,
  "services": {
@@ -345,7 +360,174 @@
         "LosAngeles": "Los Angeles",
         "Chicago": "Chicago"
       
+,
+"suggestive": {
+    "make_a_donation": "Make a Donation",
+    "donation_description": "Your generous support helps us provide better care and support for children in need.",
+    "donate_now": "Donate Now",
+    "latest_news": "Latest News",
+    "latest_news_description": "Stay updated with our latest initiatives and activities for child welfare.",
+    "news_marquee_1": "Free health camp for underprivileged children organized successfully.",
+    "news_marquee_2": "New rehabilitation center inaugurated to support rescued children.",
+    "schemes_for_children": "Schemes for Children",
+    "schemes_description": "Explore government and NGO schemes dedicated to the welfare and development of children.",
+    "check_now": "Check Now",
+    "adoption_for_children": "Adoption for Children",
+    "adoption_description": "Learn more about the adoption process and give a child a loving home.",
+    "adopt_now": "Adopt Now"
+  }
+  ,
+  "featured_card": {
+    "notice_board_title": "Public Notice Board",
+    "notice_1": "<strong>Child Safety Week</strong><br/> will be observed from April 10–16. Awareness activities to be conducted in schools.",
+    "notice_2": "<strong>Protection Training</strong><br/> for staff scheduled on April 12. Ensure registration before April 10.",
+    "notice_3": "<strong>24/7 Helpline 1098</strong> <br/>is available for child emergency support. Display in all institutions.",
+    "notice_4": "<strong>Nutrition Camp</strong><br/> for underprivileged children on April 15 at Community Hall, Sector 4.",
+    "notice_5": "<strong>Children’s Day Celebration</strong> will take place on April 20 with fun activities and a talent show for kids.",
+    "notice_6": "<strong>Volunteer Sign-Up</strong> open for the upcoming community outreach drive. Deadline: April 18."
+  }
+  ,
+  "success": {
+    "title1": "Celebration of Women’s Day 2025",
+    "location1": "India",
+    "description1": "Empowering messages and initiatives shared nationwide to honor and support women and girls.",
 
+    "title2": "National Workshop on Reimagining ICDS 2030",
+    "location2": "NITI Aayog, New Delhi",
+    "description2": "Experts gathered to strategize the future of Integrated Child Development Services.",
 
+    "title3": "Inauguration of 324 Creches in Haryana",
+    "location3": "Haryana Niwas",
+    "description3": "Hon’ble CM and WCD Minister proudly inaugurated 324 creches to support working mothers and child.",
+
+    "title4": "10 Years of Beti Bachao Beti Padhao",
+    "location4": "Haryana, India",
+    "description4": "A decade of impactful work in protecting and educating the girl child was celebrated across the state.",
+
+    "title5": "State-Level Child Welfare Training",
+    "location5": "Bhopal, Madhya Pradesh",
+    "description5": "Social workers participated in a training session to improve local child safety and development programs.",
+
+    "title6": "Anganwadi Workers Felicitated",
+    "location6": "Rajasthan, India",
+    "description6": "Frontline child care providers were honored for their dedication and service to rural communities.",
+
+    "title7": "Nutrition Awareness Drive for Children",
+    "location7": "Kolkata, West Bengal",
+    "description7": "Local health officers organized a drive to educate parents about child nutrition and hygiene."
+  },
+  "recent": {
+    "category": "Success Story",
+    "readMore": "Read More"
+  }
+
+,
+
+  "documents": {
+    "home": "Home",
+    "Schemeprograms": "Scheme Programs"
+  },
+  "schemes": {
+    "heading": "Introduction",
+    "intro": "The Child Welfare Community Schemes aim to uplift underprivileged children by providing access to education, healthcare, nutrition, and shelter. These schemes are designed to offer holistic support to ensure every child gets a fair chance at life and development in a safe and nurturing environment.",
+    "table": {
+      "srNo": "Sr. No",
+      "scheme": "Scheme",
+      "description": "Description",
+      "balShakti": "Rehabilitation and education support for children in vulnerable conditions.",
+      "snehaAahar": "Daily nutritious meals for children in under-resourced communities.",
+      "shikshaSetu": "Bridge schooling program to integrate drop-out children back into mainstream education.",
+      "balSuraksha": "Protection services for children facing abuse, neglect, or exploitation."
+    },
+    "implementationHeading": "Implementation in Local Municipal Areas",
+    "implementationList": [
+      "Bal Shakti and Shiksha Setu programs have been launched in 12 slum clusters benefiting over 4,000 children.",
+      "Registration ID: CWC/PMU/CHW123456",
+      "Facilities include mobile classrooms, child nutrition centers, counseling booths, and support desks for parents.",
+      "Infrastructure work for three child shelters is currently underway."
+    ],
+    "progressHeading": "Summary of Progress as of 2024",
+    "progressList": [
+      "Over 8,500 children enrolled in various programs, with 1,200 re-integrated into formal schools.",
+      "Healthcare screenings conducted for 3,400 children with follow-up care ensured."
+    ],
+    "componentHeading": "Component-wise Details of Child Welfare Schemes",
+    "componentTable": {
+      "component": "Component",
+      "beneficiaries": "Beneficiaries",
+      "budget": "Budget (In Lakhs)",
+      "status": "Status",
+      "balShaktiStatus": "Running in 10 local wards",
+      "snehaAaharStatus": "Operational in 15 nutrition centers",
+      "shikshaSetuStatus": "Expansion planned in 5 more locations",
+      "balSurakshaStatus": "Ongoing with 24/7 child helpline"
+    },
+    "overviewHeading": "Project Overview: Integrated Child Welfare Development Mission"
+  },
+  
+    "adoption": {
+      "processTitle": "Adoption Process",
+      "processIntro": "Adopting a child is a beautiful journey that changes lives. The process includes:",
+      "steps": {
+        "registration": "Registration with a licensed adoption agency",
+        "counseling": "Pre-adoption counseling",
+        "study": "Home study and background checks",
+        "matching": "Matching with a child",
+        "legal": "Legal procedures and final adoption order"
+      }
+    },
+    "successStories": {
+      "anjali": {
+        "title": "A New Beginning for Anjali",
+        "content": "Anjali found her forever home and now enjoys school and dancing with her new family."
+      },
+      "rahul": {
+        "title": "Rahul's Bright Future",
+        "content": "Rahul was adopted last year and dreams of becoming a doctor."
+      },
+      "meera": {
+        "title": "Meera's Smile Returns",
+        "content": "Meera's journey to healing began when she was adopted by a loving couple."
+      }
+    },
+    "form": {
+      "title": "Adoptive Parent Application Form",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "age": "Age",
+      "agePlaceholder": "Enter your age",
+      "maritalStatus": "Marital Status",
+      "married": "Married",
+      "single": "Single",
+      "divorced": "Divorced",
+      "occupation": "Occupation",
+      "occupationPlaceholder": "Enter your occupation",
+      "contact": "Contact Number",
+      "email": "Email Address",
+      "address": "Residential Address",
+      "preferences": "Child Preferences (age, gender, etc.)",
+      "reason": "Why do you want to adopt?",
+      "documents": "Upload Required Documents",
+      "submit": "Submit Application"
+    },
+    "resources": {
+      "title": "Adoption Resources & Legal Guidelines",
+      "table": {
+        "title": "Title",
+        "link": "Download Link"
+      },
+      "items": {
+        "guide": "Comprehensive Adoption Guide",
+        "legal": "Legal Procedure Overview",
+        "agencies": "List of Licensed Adoption Agencies",
+        "faqs": "Frequently Asked Questions",
+        "helpline": "Adoption Helpline"
+      },
+      "download": "Download PDF"
+    }
+  
+  
+
+  
   }
   

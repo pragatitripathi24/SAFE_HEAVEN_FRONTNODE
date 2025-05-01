@@ -57,34 +57,33 @@ const RecentCard = () => {
   return (
     <div style={marqueeContainerStyle}>
       <Marquee pauseOnHover={true} speed={50} gradient={false}>
-        {successStories.map((val, index) => {
-          const { cover, title, location, description } = val;
-          return (
-            <div style={cardStyle} key={index}>
-              <div style={textStyle}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "8px",
-                  }}
-                >
-                  <span style={categorySpanStyle}>{t('recent.category')}</span>
-                  <i className="fa fa-heart"></i>
-                </div>
-                <h4>{title}</h4>
-                <p>
-                  <i className="fa fa-location-dot"></i> {location}
-                </p>
-                <p>{description}</p>
-              </div>
-              <div style={buttonContainerStyle}>
-                <button style={buttonStyle}>{t('recent.readMore')}</button>
-              </div>
-            </div>
-          );
-        })}
+      {successStories.map((val, index) => {
+  const { cover, titleKey, locationKey, descriptionKey } = val;
+  return (
+    <div style={cardStyle} key={index}>
+      <div style={textStyle}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "8px",
+          }}
+        >
+          <span style={categorySpanStyle}>{t('recent.category')}</span>
+          <i className="fa fa-heart"></i>
+        </div>
+        <h4>{t(titleKey)}</h4>
+        <p><i className="fa fa-location-dot"></i> {t(locationKey)}</p>
+        <p>{t(descriptionKey)}</p>
+      </div>
+      <div style={buttonContainerStyle}>
+        <button style={buttonStyle}>{t('recent.readMore')}</button>
+      </div>
+    </div>
+  );
+})}
+
       </Marquee>
     </div>
   );

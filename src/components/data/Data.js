@@ -82,53 +82,54 @@ export const successStories = [
   {
     id: 1,
     cover: "../images/success/s-1.png",
-    title: "Celebration of Women’s Day 2025",
-    location: "India",
-    description: "Empowering messages and initiatives shared nationwide to honor and support women and girls.",
+    titleKey: "success.title1",
+    locationKey: "success.location1",
+    descriptionKey: "success.description1"
   },
   {
     id: 2,
     cover: "../images/success/s-2.png",
-    title: "National Workshop on Reimagining ICDS 2030",
-    location: "NITI Aayog, New Delhi",
-    description: "Experts gathered to strategize the future of Integrated Child Development Services.",
+    titleKey: "success.title2",
+    locationKey: "success.location2",
+    descriptionKey: "success.description2"
   },
   {
     id: 3,
     cover: "../images/success/s-3.png",
-    title: "Inauguration of 324 Creches in Haryana",
-    location: "Haryana Niwas",
-    description: "Hon’ble CM and WCD Minister proudly inaugurated 324 creches to support working mothers and child.",
+    titleKey: "success.title3",
+    locationKey: "success.location3",
+    descriptionKey: "success.description3"
   },
   {
     id: 4,
     cover: "../images/success/s-4.png",
-    title: "10 Years of Beti Bachao Beti Padhao",
-    location: "Haryana, India",
-    description: "A decade of impactful work in protecting and educating the girl child was celebrated across the state.",
+    titleKey: "success.title4",
+    locationKey: "success.location4",
+    descriptionKey: "success.description4"
   },
   {
     id: 5,
     cover: "../images/success/s-5.png",
-    title: "State-Level Child Welfare Training",
-    location: "Bhopal, Madhya Pradesh",
-    description: "Social workers participated in a training session to improve local child safety and development programs.",
+    titleKey: "success.title5",
+    locationKey: "success.location5",
+    descriptionKey: "success.description5"
   },
   {
     id: 6,
     cover: "../images/success/s-6.png",
-    title: "Anganwadi Workers Felicitated",
-    location: "Rajasthan, India",
-    description: "Frontline child care providers were honored for their dedication and service to rural communities.",
+    titleKey: "success.title6",
+    locationKey: "success.location6",
+    descriptionKey: "success.description6"
   },
   {
     id: 7,
     cover: "../images/success/s-7.png",
-    title: "Nutrition Awareness Drive for Children",
-    location: "Kolkata, West Bengal",
-    description: "Local health officers organized a drive to educate parents about child nutrition and hygiene.",
-  },
+    titleKey: "success.title7",
+    locationKey: "success.location7",
+    descriptionKey: "success.description7"
+  }
 ];
+
 
 
 export const list = [
