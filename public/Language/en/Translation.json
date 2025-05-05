@@ -467,14 +467,16 @@
   
     "adoption": {
       "processTitle": "Adoption Process",
-      "processIntro": "Adopting a child is a beautiful journey that changes lives. The process includes:",
+      "processIntroo": "Adopting a child is a beautiful journey that changes lives. The process includes:",
       "steps": {
         "registration": "Registration with a licensed adoption agency",
         "counseling": "Pre-adoption counseling",
         "study": "Home study and background checks",
         "matching": "Matching with a child",
         "legal": "Legal procedures and final adoption order"
-      }
+      },
+      "processIntro": "Adopting a child is a life-changing journey that brings joy, responsibility, and deep emotional connection. The adoption process is designed to ensure the safety and well-being of the child, while also preparing prospective parents for the new role. Each step—from registration to legal formalities—plays a crucial part in building a stable and loving home. Families are guided and supported throughout, helping them understand the emotional, legal, and social aspects of adoption. Patience and commitment are key, as the process may take time but ultimately leads to a fulfilling and beautiful outcome. Remember, every child deserves a safe and nurturing environment to grow and thrive."
+
     },
     "successStories": {
       "anjali": {

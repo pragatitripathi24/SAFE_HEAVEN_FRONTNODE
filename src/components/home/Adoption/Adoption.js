@@ -43,7 +43,7 @@ export default function AdoptionPage() {
             <Card.Body>
               <Card.Title className="fw-bold">{t("adoption.processTitle")}</Card.Title>
               <Card.Text>
-                {t("adoption.processIntro")}
+                {t("adoption.processIntroo")}
                 <ul>
                   <li><FaRegCheckCircle className="me-2 text-success" />{t("adoption.steps.registration")}</li>
                   <li><FaRegCheckCircle className="me-2 text-success" />{t("adoption.steps.counseling")}</li>
@@ -52,8 +52,12 @@ export default function AdoptionPage() {
                   <li><FaRegCheckCircle className="me-2 text-success" />{t("adoption.steps.legal")}</li>
                 </ul>
               </Card.Text>
+              <p>
+              {t("adoption.processIntro")}
+              </p>
             </Card.Body>
           </Card>
+          
         </Col>
         <Col md={4}>
           <Card className="h-100 bg-light">
