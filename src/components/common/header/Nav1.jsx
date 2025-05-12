@@ -60,12 +60,15 @@ const Nav1 = () => {
             </div>
           </div>
 
-          {/* <div className="vertical-line1"></div>
+          <div className="vertical-line1"></div>
           <div className="d-flex align-items-center">
-            <button className="btn text-white">
+           <Link to="/login">
+           <button className="btn text-white">
               <i className="fa fa-sign-out"></i> {t("NAV1.SIGN_IN")}
-            </button>
-          </div> */}
+            </button></Link>
+          </div>
+
+          
 
           <div className="vertical-line1"></div>
         </div>

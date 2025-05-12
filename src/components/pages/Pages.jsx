@@ -14,6 +14,8 @@ import LostChildren from "../LostChildren/LostChildren"
 import BlogsComp from "../Blogs/BlogsComp"
 import Marquee from "../home/Marquee/Marquee"
 import Adoption from "../home/Adoption/Adoption"
+import Login from "../Authorization/Login"
+import SignUp from "../Authorization/Signup"
 
 const Pages = () => {
   return (
@@ -26,6 +28,8 @@ const Pages = () => {
           <Route exact path='/about' component={About} />
           <Route exact path='/services' component={Services} />
           <Route exact path='/schemes' component={Schemes} />
+          <Route exact path ='/login' component={Login}/>
+          <Route exact path='/signup' component={SignUp}/>
           <Route exact path='/ngo' component={Ngo} />
           <Route exact path='/lc' component={LostChildren} />
           <Route exact path='/adop' component={Adoption} />

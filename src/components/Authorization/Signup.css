@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Form styling */
+.form {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 28rem;
+  transition: all 0.3s ease;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Input fields */
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #962145;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+/* Checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.checkbox-input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #962145;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color:#962145;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #962145;
+}
+
+/* Link */
+.form-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.form-link a {
+  color: #962145;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .form {
+    padding: 1.5rem;
+  }
+  
+  .form-title {
+    font-size: 1.25rem;
+  }
+  
+  .input-field {
+    padding: 0.65rem 0.9rem 0.65rem 2.25rem;
+  }
+  
+  .input-icon {
+    left: 0.9rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
